@@ -1,4 +1,4 @@
-# Assignment 0: Statistical Foundations & Visualization
+# Mathematical-Foundations-AI
 
 This folder contains the implementation of a bivariate normal distribution generator and a visualization tool.
 
