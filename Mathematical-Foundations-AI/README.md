@@ -11,3 +11,6 @@ This project demonstrates the generation and visualization of stochastic data us
 - Normal (Gaussian) Distributions
 - Standard Deviation and Mean in two-dimensional space
 - Data type precision in Machine Learning datasets
+
+## Visualization Output
+![Bivariate Normal Distribution Plot](bivariate_distribution_output.png)
