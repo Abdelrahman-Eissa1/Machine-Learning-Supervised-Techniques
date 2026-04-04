@@ -1,12 +1,11 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import KFold
-from sklearn.metrics import accuracy_score
 
 def load_data(filepath):
     """Loads dataset and splits into features and labels."""
+    # Note: Ensure DataSet1.csv is in the same folder as this script
     data = np.genfromtxt(filepath, delimiter=';')
     X, y = data[:, :-1], data[:, -1]
     return X, y
@@ -16,10 +15,7 @@ def mean_zero_one_loss(y_true, y_pred):
     return np.mean(y_true != y_pred)
 
 def run_knn_cv(X, y, k, n_folds=10):
-    """
-    Performs K-Fold Cross-Validation for a k-NN model.
-    Returns the mean error across all folds.
-    """
+    """Performs 10-Fold Cross-Validation for a k-NN model."""
     kf = KFold(n_splits=n_folds, shuffle=True, random_state=42)
     errors = []
     
@@ -35,26 +31,33 @@ def run_knn_cv(X, y, k, n_folds=10):
         
     return np.mean(errors)
 
-def plot_error_analysis(k_range, errors, title="k-NN Error Analysis"):
-    """Visualizes how the number of neighbors affects error rate."""
+def plot_and_save_analysis(k_range, errors):
+    """Visualizes the analysis and saves the output as a PNG file."""
     plt.figure(figsize=(10, 6))
-    plt.plot(k_range, errors, marker='o', linestyle='-')
-    plt.title(title)
+    plt.plot(k_range, errors, marker='o', linestyle='-', color='b')
+    plt.title('k-NN Performance: Error Rate vs. Number of Neighbors (k)')
     plt.xlabel('Number of Neighbors (k)')
-    plt.ylabel('Mean Zero-One Loss')
-    plt.grid(True)
+    plt.ylabel('Mean Zero-One Loss (Error)')
+    plt.grid(True, linestyle='--', alpha=0.7)
+    
+    # --- THIS PART SAVES THE IMAGE ---
+    # dpi=300 makes it high resolution for GitHub
+    plt.savefig("knn_error_plot.png", dpi=300, bbox_inches='tight')
+    print("Graph saved as 'knn_error_plot.png'")
+    # ---------------------------------
+    
     plt.show()
 
 if __name__ == "__main__":
-    # Note: Ensure DataSet1.csv is in the same directory
     try:
         X, y = load_data('DataSet1.csv')
         
-        # Analyze k values from 1 to 179 (odd numbers)
+        # Testing odd k values from 1 to 179
         k_values = range(1, 180, 2)
+        print("Running Cross-Validation... please wait.")
         mean_errors = [run_knn_cv(X, y, k) for k in k_values]
         
-        plot_error_analysis(k_values, mean_errors)
-        print("Analysis complete. Plot generated.")
+        plot_and_save_analysis(k_values, mean_errors)
+        
     except Exception as e:
-        print(f"Error loading data: {e}. Make sure 'DataSet1.csv' is present.")
+        print(f"Error: {e}. Check if 'DataSet1.csv' is in the folder.")
