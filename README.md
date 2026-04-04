@@ -1,16 +1,20 @@
-# Machine Learning: Supervised Techniques
+# Supervised Machine Learning: Implementations & Analysis
 
-This repository contains my implementations of key concepts and algorithms from the Supervised Machine Learning curriculum.
+This repository is a comprehensive collection of core Machine Learning algorithms implemented from the ground up, focusing on statistical foundations, classification theory, and optimization techniques.
 
-## 📂 Course Modules
+## 🛠 Project Modules
 
-### 1. [Mathematical Foundations & Visualization](./Mathematical-Foundations-AI)
-*   Generation of bivariate normal distributions.
-*   Large-scale data visualization with Matplotlib.
+### 🧪 [Statistical Foundations & Stochastic Generation](./Mathematical-Foundations-AI)
+*   Implemented high-dimensional data generation using NumPy's vectorized operations.
+*   Visualized bivariate distributions to analyze stochastic density.
 
-### 2. [Assignment 1: Topic Name Here](#) (Coming Soon)
-*   Implementation details will go here.
+### 🤖 [Classification Analysis: k-Nearest Neighbors](./k-Nearest-Neighbors-Analysis)
+*   Architected a complete k-NN pipeline including K-Fold Cross-Validation.
+*   Performed hyperparameter optimization ($k$-tuning) to identify the bias-variance tradeoff.
+*   Benchmarked model robustness against stochastic label noise and high-dimensional "noisy" features.
 
----
-**Status:** Actively updating with course assignments.
-**Technologies:** Python, NumPy, Matplotlib, Scikit-Learn.
+## 🧰 Tech Stack
+*   **Languages:** Python 3.x
+*   **Scientific Computing:** NumPy, SciPy
+*   **Machine Learning:** Scikit-Learn (Model Selection & Metrics)
+*   **Data Visualization:** Matplotlib
