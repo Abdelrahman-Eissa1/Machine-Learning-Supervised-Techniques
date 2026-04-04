@@ -29,6 +29,7 @@ def plot_bivariate_data(data):
     plt.ylabel("Y values")
     plt.title("Scatterplot of Bivariate Normal Data")
     plt.grid(True, linestyle='--', alpha=0.6)
+    plt.savefig("bivariate_distribution_output.png")
     plt.show()
 
 if __name__ == "__main__":
