@@ -32,6 +32,11 @@ This repository is a comprehensive collection of core Machine Learning algorithm
 *   Implemented Gini Impurity logic and Decision Tree classifiers.
 *   Performed automated hyperparameter tuning via Randomized Search.
 *   Benchmarked performance vs. k-NN and SVM on the Fashion MNIST dataset.
+
+### 앙 [Ensemble Learning & Interpretability](./Ensemble-Learning-Interpretability)
+*   Derived the mathematical equivalence of AdaBoost to Forward Stagewise Modeling.
+*   Implemented Random Forest classifiers with pixel-level feature importance mapping.
+*   Conducted a comparative study on clothing patterns using Fashion MNIST.
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
 *   **Scientific Computing:** NumPy, SciPy
