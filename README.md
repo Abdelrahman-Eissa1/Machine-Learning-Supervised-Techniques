@@ -23,6 +23,11 @@ This repository is a comprehensive collection of core Machine Learning algorithm
 *   Decomposed Expected Prediction Error (EPE) into Squared Bias, Variance, and Irreducible Noise.
 *   Implemented core evaluation metrics: Precision, Recall, F1-Score, and Confusion Matrix analysis.
 
+### 🛡️ [SVM: Kernel Analysis & Optimization](./SVM-Kernel-Analysis-Optimization)
+*   Implemented Support Vector Machines using Polynomial and RBF kernels.
+*   Analyzed the mathematical foundations of KKT conditions and dual optimization.
+*   Visualized decision margins and identified support vectors for complex datasets.
+
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
 *   **Scientific Computing:** NumPy, SciPy
