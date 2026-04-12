@@ -28,6 +28,10 @@ This repository is a comprehensive collection of core Machine Learning algorithm
 *   Analyzed the mathematical foundations of KKT conditions and dual optimization.
 *   Visualized decision margins and identified support vectors for complex datasets.
 
+### 🌳 [Decision Tree Optimization & Benchmarks](./Decision-Tree-Optimization-Benchmarks)
+*   Implemented Gini Impurity logic and Decision Tree classifiers.
+*   Performed automated hyperparameter tuning via Randomized Search.
+*   Benchmarked performance vs. k-NN and SVM on the Fashion MNIST dataset.
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
 *   **Scientific Computing:** NumPy, SciPy
