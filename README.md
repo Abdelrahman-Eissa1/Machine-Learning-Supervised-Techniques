@@ -37,6 +37,11 @@ This repository is a comprehensive collection of core Machine Learning algorithm
 *   Derived the mathematical equivalence of AdaBoost to Forward Stagewise Modeling.
 *   Implemented Random Forest classifiers with pixel-level feature importance mapping.
 *   Conducted a comparative study on clothing patterns using Fashion MNIST.
+
+### 📉 [Logistic Regression from Scratch](./Logistic-Regression-from-Scratch)
+*   Implemented a full Logistic Regression pipeline using NumPy.
+*   Developed manual Binary Cross-Entropy loss and Analytical Gradient functions.
+*   Performed model evaluation using ROC Curves and AUC scores.
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
 *   **Scientific Computing:** NumPy, SciPy
